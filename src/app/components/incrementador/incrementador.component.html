@@ -1,0 +1,14 @@
+<h3>{{leyenda}}</h3>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="button" (click)="cambiarValor( -5)">
+    	<i class="mdi mdi–plus">menos</i>[
+    </button>
+  </div>
+  <input type="number" class="form-control" placeholder="" aria-label="" name="progress" aria-describedby="basic-addon1" [(ngModel)]="progress" min="1" max="100" (ngModelChange)="change( $event )" maxlength="3" #inputProgress>
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="button" (click)="cambiarValor( +5 )">
+    	<i class="">mas</i>
+    </button>
+  </div>
+</div>
